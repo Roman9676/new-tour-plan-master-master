@@ -1,4 +1,4 @@
-var mySwiper = new Swiper(".hotel-slider", {
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
 
   loop: true,
@@ -9,4 +9,15 @@ var mySwiper = new Swiper(".hotel-slider", {
     prevEl: ".hotel-slider__button--prev",
   },
   effect: "coverflow",
+});
+var reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
 });
