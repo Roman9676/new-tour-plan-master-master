@@ -958,7 +958,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .hotel-slider {
+  .hotel__slider {
     margin-bottom: 30px;
   }
   .hotel__right {
@@ -1115,7 +1115,7 @@ template {
   .hotel-info {
     padding-bottom: 37px;
   }
-  .hotel-slider {
+  .hotel__slider {
     height: 179px;
     margin-bottom: 22px;
   }
