@@ -902,6 +902,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -1163,6 +1164,7 @@ template {
   .card {
     height: 255px;
     width: 255px;
+    margin-left: 15px;
   }
 }
 
