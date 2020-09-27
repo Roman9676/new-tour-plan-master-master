@@ -1270,11 +1270,11 @@ template {
         flex-wrap: wrap;
   }
   .activities__card {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
   .card {
     width: 339px;
-    height: 230px;
+    height: 254px;
   }
 }
 
