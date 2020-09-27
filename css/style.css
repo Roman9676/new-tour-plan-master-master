@@ -773,7 +773,7 @@ template {
 .booking__heading {
   font-style: normal;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 25px;
 }
 
@@ -1468,6 +1468,14 @@ template {
   }
   .card {
     width: 49%;
+  }
+  .reviews__tittle {
+    font-style: bold;
+    font-size: 18px;
+    line-height: 23px;
+    line-height: 100%;
+    align: center;
+    vertical-align: top;
   }
 }
 /*# sourceMappingURL=style.css.map */
