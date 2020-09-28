@@ -454,6 +454,7 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -918,6 +919,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1239,13 +1241,16 @@ template {
     padding: 0px 0 70px 0;
   }
   .reviews-slider__text {
-    margin-top: 9px;
+    margin-top: 14px;
   }
   .reviews-slider__item {
     max-width: 580px;
   }
   .reviews-slider__item:after, .reviews-slider__item:before {
     display: none;
+  }
+  .reviews-slider__avatar {
+    margin-bottom: -9px;
   }
   .reviews-slider__profile {
     margin-bottom: 17px;
@@ -1385,13 +1390,13 @@ template {
     display: none;
   }
   .reviews-slider__button {
-    top: 32px;
+    top: 45px;
   }
   .reviews-slider__button--prev {
     left: 30%;
     -webkit-transform: translateY(-50%, 0);
             transform: translateY(-50%, 0);
-    margin-left: -65px;
+    margin-left: -45px;
   }
   .reviews-slider__button--next {
     left: 74%;
@@ -1478,6 +1483,9 @@ template {
     line-height: 38px;
     margin-bottom: 22px;
   }
+  .subscribe__input {
+    padding-left: 20px;
+  }
   .card {
     width: 100%;
   }
@@ -1493,7 +1501,7 @@ template {
     top: 47px;
   }
   .reviews-slider__button--prev {
-    left: 36%;
+    left: 28%;
   }
   .reviews-slider__button--next {
     left: 78%;
@@ -1507,6 +1515,7 @@ template {
   }
   .reviews-slider__text {
     margin-top: 16px;
+    text-align: left;
   }
   .reviews-slider__username {
     margin-bottom: 9px;
