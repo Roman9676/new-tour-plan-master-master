@@ -78,13 +78,7 @@
                 margin-bottom: 17px
             &__button
                 top: 49%
-                &--prev
-                    background-image: url(../img/arrow-secondary__prev.svg)
-                    left: 1px
 
-                &--next
-                    background-image: url(../img/arrow-secondary__next.svg)
-                    right: 1px
         &__tittle
             font-style: normal
             font-weight: bold
@@ -179,11 +173,11 @@
                 top: 32px
 
                 &--prev
-                    left: 50%
+                    left: 30%
                     transform: translateY(-50%,0)
                     margin-left: -65px
                 &--next
-                    left: 50%
+                    left: 74%
                     transform: translateY(50%,0)
                     margin-right: -65px
     .activities
@@ -193,6 +187,11 @@
     .card
         width: 49%
         height: 255px
+
+@media (max-width: 619px)
+    .container
+        width: 90%
+
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -246,10 +245,43 @@
     .card
         width: 49%
     .reviews
+        max-width: 98%
+        height: 611px
+        &-slider
+            &__avatar
+                margin-bottom: -14px
+                margin-top: 2px
+            &__button
+                top: 47px
+                &--prev
+                    left: 36%
+                &--next
+                    left: 78%
+                &__profile
+                    margin-bottom: 10px
+                    margin-top: 1px
+                &__avatar
+
+                    margin-bottom: 10px
+            &__text
+                margin-top: 16px
+            &__username
+                margin-bottom: 9px
+                margin-top: 23px
         &__tittle
-            font-style: bold
+            font-style: normal
+            font-weight: bold
             font-size: 18px
             line-height: 23px
-            line-height: 100%
-            align: center
-            vertical-align: top
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 43px
+    .activities
+        height: 1247px
+        padding-top: 38px
+        &__tittle
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 23px
+            text-transform: uppercase
