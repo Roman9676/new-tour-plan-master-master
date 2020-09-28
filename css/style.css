@@ -902,6 +902,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: #BDBDBD;
 }
 
 .subscribe__button {
@@ -944,7 +945,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 730px;
+  max-width: 730px;
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
@@ -1056,7 +1057,7 @@ template {
   font-size: 12px;
   line-height: 160%;
   text-align: justify;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .activities {
@@ -1082,6 +1083,7 @@ template {
 }
 
 .card {
+  border: 1px solid red;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1096,6 +1098,8 @@ template {
   padding: 24px 26px;
   width: 255px;
   height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .card::before {
@@ -1161,8 +1165,8 @@ template {
        object-fit: cover;
   }
   .card {
-    height: 255px;
-    width: 255px;
+    height: 235px;
+    width: 235px;
   }
 }
 
@@ -1250,12 +1254,10 @@ template {
     top: 49%;
   }
   .reviews-slider__button--prev {
-    background-image: url(../img/arrow-secondary__prev.svg);
-    left: 1px;
+    left: 0;
   }
   .reviews-slider__button--next {
-    background-image: url(../img/arrow-secondary__next.svg);
-    right: 1px;
+    right: 0;
   }
   .reviews__tittle {
     font-style: normal;
@@ -1275,11 +1277,11 @@ template {
         flex-wrap: wrap;
   }
   .activities__card {
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
   .card {
     width: 339px;
-    height: 254px;
+    height: 255px;
   }
 }
 
@@ -1386,13 +1388,13 @@ template {
     top: 32px;
   }
   .reviews-slider__button--prev {
-    left: 50%;
+    left: 30%;
     -webkit-transform: translateY(-50%, 0);
             transform: translateY(-50%, 0);
     margin-left: -65px;
   }
   .reviews-slider__button--next {
-    left: 50%;
+    left: 74%;
     -webkit-transform: translateY(50%, 0);
             transform: translateY(50%, 0);
     margin-right: -65px;
@@ -1404,6 +1406,12 @@ template {
   .card {
     width: 49%;
     height: 255px;
+  }
+}
+
+@media (max-width: 619px) {
+  .container {
+    width: 90%;
   }
 }
 
@@ -1427,8 +1435,7 @@ template {
     width: 100%;
   }
   .card {
-    width: 49%;
-    height: 230px;
+    width: 100%;
   }
 }
 
@@ -1472,15 +1479,59 @@ template {
     margin-bottom: 22px;
   }
   .card {
-    width: 49%;
+    width: 100%;
+  }
+  .reviews {
+    max-width: 98%;
+    height: 611px;
+  }
+  .reviews-slider__avatar {
+    margin-bottom: -14px;
+    margin-top: 2px;
+  }
+  .reviews-slider__button {
+    top: 47px;
+  }
+  .reviews-slider__button--prev {
+    left: 36%;
+  }
+  .reviews-slider__button--next {
+    left: 78%;
+  }
+  .reviews-slider__button__profile {
+    margin-bottom: 10px;
+    margin-top: 1px;
+  }
+  .reviews-slider__button__avatar {
+    margin-bottom: 10px;
+  }
+  .reviews-slider__text {
+    margin-top: 16px;
+  }
+  .reviews-slider__username {
+    margin-bottom: 9px;
+    margin-top: 23px;
   }
   .reviews__tittle {
-    font-style: bold;
+    font-style: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 23px;
-    line-height: 100%;
-    align: center;
-    vertical-align: top;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 43px;
+  }
+  .activities {
+    height: 1247px;
+    padding-top: 38px;
+  }
+  .activities__tittle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
