@@ -1085,7 +1085,6 @@ template {
 }
 
 .card {
-  border: 1px solid red;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
