@@ -13,7 +13,9 @@
     .card
         height: 235px
         width: 235px
-
+    .footer
+        &__input
+            flex-basis: 100%
 @media (max-width: 992px )
     .container, .newsletter-wrapper
         max-width: 700px
@@ -101,6 +103,39 @@
         width: 339px
         height: 255px
 
+    .footer
+        padding-top: 25px
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-row-gap: 47px
+        &__input
+            flex-basis: 48%
+        &__logo
+            width: 99px
+            grid-row: 1/2
+            grid-column: span 2
+
+        &__social
+            &-network
+                grid-row: 1/2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2/3
+            grid-column: span 2
+        &-legal
+            grid-column: span 2
+            margin-left: 22px
+        &__additional
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-column: span 4
+                grid-row: 3
+                margin-top: 12px
+            &-form
+                grid-column: span 5
+                grid-row: 4
 @media (max-width: 767px )
     .container
         max-width: 577px
@@ -188,7 +223,9 @@
     .card
         width: 49%
         height: 255px
-
+    .footer
+        &__input
+            flex-basis: 100%
 @media (max-width: 619px)
     .container
         width: 90%
@@ -211,6 +248,31 @@
 
     .card
         width: 100%
+    .footer
+        grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__additional
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &-legal
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
 
 @media(max-width: 320px)
     .container
