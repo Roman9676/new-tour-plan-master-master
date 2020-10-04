@@ -168,27 +168,44 @@
     body
         padding-top: 71px   
     .navbar
-        &--mobile
-            &__fixed
+        &__mobile
+            &--fixed
              position: fixed
              left: 0
              padding: 0
              top: 0
              right: 0
              z-index: 99
-        &__search,&__user
-            display: none
-           
-        &-button
+        &__search, &__user
+            &--mobile
+                &--hidden
+                   display: none 
+                &--visible  
+                    display: flex 
+
+        &__user
+            flex-direction: column
+            justify-content: center           
+        &-bottom
             display: none 
+            position: fixed
+            left: 0
+            right: 0
+            bottom: 0
+            top: 71px
             &--visible
                 display: block
+        &-menu
+            flex-direction: column
+            &__item
+                 margin-bottom: 20px
+        &-menu
+            &__item1         
+                &--mobile 
+                    &--visible
+                        display: block
         &-top
             padding-top: 23px
-
-        &__search, &-menu, &__user
-            display: none
-
     .menu
         &-button
             display: flex
@@ -205,6 +222,10 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
+    .user
+        &__name
+             &--light
+                  color: $light          
     .stars
         flex-basis: auto
     .hotel
@@ -273,6 +294,25 @@
 @media (max-width: 576px)
     .logo
         width: 99px 
+    .user
+        &__avatar
+            margin-top: 9px  
+        &__name    
+            margin-top: 11px  
+            margin-left: 6px
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 18px
+    .navbar        
+        &__search
+             width: 243px    
+             margin-left: 64px    
+             margin-top: 28px
+             margin-bottom: 36px
+        &-menu
+            &__item
+                margin-bottom: 17px
     .hotel
         &__slider
             margin-bottom: 20px
