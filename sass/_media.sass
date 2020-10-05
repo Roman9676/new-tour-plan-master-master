@@ -166,7 +166,7 @@
                 max-width: 539px  
         &__message
             margin-bottom: 24px                   
-@media (max-width: 767px )
+@media (max-width: 767px ) and (orientation: landscape)
     .container
         max-width: 577px
         width: 88%
@@ -187,12 +187,10 @@
                    display: none 
                 &--visible  
                     display: flex 
-
+                    
         &__user
             flex-direction: column
             justify-content: center 
-             
-                      
         &-bottom
             display: none 
             position: fixed
@@ -202,12 +200,15 @@
             top: 71px
             &--visible
                 display: block
+            &--scroll
+                overflow: scroll    
         &-menu
             flex-direction: column
             &__item
                  margin-bottom: 20px
+               
         &-menu
-            &__item1
+            &__item
                 margin-top: 10px
                 margin-bottom: 10px         
                 &--mobile 
@@ -255,7 +256,6 @@
             &__offer
                 order: -1
                 margin-left: 0
-
     .hotel
         &__right
             flex-direction: column
@@ -280,7 +280,6 @@
                     display: none
             &__button
                 top: 45px
-
                 &--prev
                     left: 30%
                     transform: translateY(-50%,0)
@@ -292,14 +291,19 @@
     .activities
         padding-top: 40px
         border-bottom: 60px
-      
     .card
         width: 49%
         height: 255px
     .footer
         &__input
             flex-basis: 100%
+      
         
+                  
+             
+                      
+
+
 
 @media (max-width: 576px)
     .logo
@@ -323,7 +327,7 @@
         &-menu
             &__item
                 margin-bottom: 17px
-            &__item1
+            &__item
                 margin-top: 0 
                 margin-bottom: 0    
     .hotel

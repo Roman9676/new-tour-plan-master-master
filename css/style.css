@@ -1579,7 +1579,7 @@ template {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) and (orientation: landscape) {
   .container {
     max-width: 577px;
     width: 88%;
@@ -1623,6 +1623,9 @@ template {
   .navbar-bottom--visible {
     display: block;
   }
+  .navbar-bottom--scroll {
+    overflow: scroll;
+  }
   .navbar-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1632,11 +1635,11 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item1 {
+  .navbar-menu__item {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .navbar-menu__item1--mobile--visible {
+  .navbar-menu__item--mobile--visible {
     display: block;
   }
   .navbar-top {
@@ -1787,7 +1790,7 @@ template {
   .navbar-menu__item {
     margin-bottom: 17px;
   }
-  .navbar-menu__item1 {
+  .navbar-menu__item {
     margin-top: 0;
     margin-bottom: 0;
   }
