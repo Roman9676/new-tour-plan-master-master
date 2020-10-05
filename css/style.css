@@ -1632,6 +1632,10 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
+  .navbar-menu__item1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .navbar-menu__item1--mobile--visible {
     display: block;
   }
@@ -1666,6 +1670,7 @@ template {
   }
   .user__name--light {
     color: #ffffff;
+    margin-top: 5px;
   }
   .stars {
     -ms-flex-preferred-size: auto;
@@ -1781,6 +1786,10 @@ template {
   }
   .navbar-menu__item {
     margin-bottom: 17px;
+  }
+  .navbar-menu__item1 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .hotel__slider {
     margin-bottom: 20px;
